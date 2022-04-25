@@ -1,11 +1,14 @@
 import "../styles/styles.scss";
 
-import TransitionLayout from "../components/TransitionLayout";
+import Layout from "../components/layout/Layout";
+import TransitionLayout from "../components/layout/TransitionLayout";
 
 function MyApp({ Component, pageProps }) {
   return (
     <TransitionLayout>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </TransitionLayout>
   );
 }
