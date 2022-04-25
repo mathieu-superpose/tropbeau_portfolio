@@ -1,6 +1,5 @@
 import { memo, useEffect, useState } from "react";
 
-import { Wavebottom } from '../waves/Wavebottom'
 import { Wavetop } from '../waves/Wavetop'
 import styles from './TransitionLayout.module.scss'
 import { useRouter } from 'next/router'
