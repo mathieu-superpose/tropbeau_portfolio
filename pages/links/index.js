@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Links() {
   return (
-    <div>
+    <main>
       <p>coucou from links</p>
       <Link href="/">
         <a>back home</a>
       </Link>
-    </div>
+    </main>
   );
 }
