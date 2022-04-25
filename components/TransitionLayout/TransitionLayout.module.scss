@@ -33,12 +33,12 @@
 }
 
 .loader__fadeOut {
-  --top: 120vh;
+  --top: 130vh;
   animation: slide-in 1s both .05s;
 }
 
 .loader__fadeIn {
-  --bottom: -120vh;
+  --bottom: -130vh;
   animation: slide-out 1s both .5s;
   color: c.$yellow;
 }
