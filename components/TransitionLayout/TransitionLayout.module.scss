@@ -1,0 +1,133 @@
+@use '/styles/colors' as c;
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  opacity: 0;
+  background-color: cornflowerblue;
+  transition: 1s;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.loader__fadeOut,
+.loader__fadeIn,
+.loader__firstload {
+  background-color: blue;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 3;
+}
+
+.loader__fadeOut {
+  --top: 120vh;
+  animation: slide-in 1s both .05s;
+}
+
+.loader__fadeIn {
+  --bottom: -120vh;
+  animation: slide-out 1s both .5s;
+  color: c.$yellow;
+}
+
+.path {
+  text-transform: capitalize;
+  font-family: "Beanbag";
+  font-size: 10rem;
+}
+
+.ontop,
+.onbottom {
+  fill: blue;
+  width: 170%;
+  height: 175px;
+  position: absolute;
+}
+
+.ontop {
+  top: 0;
+  transform: rotate(180deg) translateY(100%);
+}
+
+.onbottom {
+  fill: blue;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.underloader__fadeOut,
+.underloader__fadeIn,
+.underloader__firstload {
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.underloader__fadeOut {
+  --top: 130vh;
+  animation: slide-in .7s both;
+}
+
+.underloader__fadeIn {
+  --bottom: -130vh;
+  animation: slide-out 1.3s both .6s;
+  color: c.$yellow;
+}
+
+.underontop,
+.underonbottom {
+  fill: white;
+  position: absolute;
+  width: 170%;
+  height: 175px;
+  position: absolute;
+}
+
+.underontop {
+  top: 0;
+  transform: rotate(180deg) translateY(100%);
+}
+
+.underonbottom {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(var(--top));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(var(--bottom));
+  }
+}

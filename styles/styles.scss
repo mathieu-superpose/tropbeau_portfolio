@@ -1,0 +1,8 @@
+@use './colors' as c;
+@use './resets';
+@use './fonts';
+@use './layout';
+
+body {
+	background: c.$red;
+}

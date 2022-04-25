@@ -1,0 +1,19 @@
+@use "/styles/colors" as c;
+
+.Navbar {
+  height: 10vh;
+  background: c.$yellow;
+  //position: fixed;
+  //top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
