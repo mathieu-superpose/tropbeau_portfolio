@@ -1,0 +1,6 @@
+@use "./colors" as c;
+
+h1 {
+  font-size: 10rem;
+  color: c.$pale-brown;
+}

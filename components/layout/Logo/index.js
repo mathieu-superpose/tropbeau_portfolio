@@ -1,19 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "./img/TBS_logo.svg";
+import logo from "./img/tbs.svg";
 import styles from "./Logo.module.scss";
 
 export default function Logo() {
   return (
-    <div className={styles.Logo}>
+    <div>
       <Link href="/">
-        <a>
-          <Image
-            src={logo}
-            width="200"
-            height="100"
-            alt="Trop Beau Site logo"
-          />
+        <a className={styles.Logo}>
+          <Image src={logo} width="150" height="80" alt="Trop Beau Site logo" />
         </a>
       </Link>
     </div>
