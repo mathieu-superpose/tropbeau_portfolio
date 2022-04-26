@@ -1,9 +1,19 @@
 @font-face {
- font-family: "Alphasmoke";
- src: url("/fonts/alphasmoke/Alphasmoke.ttf") format("truetype");
+  font-family: "Alphasmoke";
+  src: url("/fonts/alphasmoke/Alphasmoke.ttf") format("truetype");
 }
 
 @font-face {
- font-family: "Beanbag";
- src: url("/fonts/beanbag/Beanbag.ttf") format("truetype");
+  font-family: "Beanbag";
+  src: url("/fonts/beanbag/Beanbag.ttf") format("truetype");
+}
+
+html {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
 }
